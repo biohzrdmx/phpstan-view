@@ -11,7 +11,7 @@ Just place `phpstan-view.php` on your development root (that is, the folder wher
 By default the script lists all the folders as projects, when you click one it will search for a PHPStan JSON file using a preset folder structure. It may not fit your particular folder hierarchy, but you may modify it; just open `phpstan-view.php` on your favorite code editor and change the structure defined in `line 10`:
 
 ```php
-    $json_location = 'tests/output/phpstan.json';
+$json_location = 'tests/output/phpstan.json';
 ```
 
 Use the correct folder structure that you use in your projects and save.
