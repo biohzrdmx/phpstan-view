@@ -179,11 +179,15 @@
 									</article>
 								<?php
 										endforeach;
+									else:
+								?>
+									<article><span class="text-muted">No errors to show, congrats!</span> &#x1f642;</article>
+								<?php
 									endif;
 								?>
 							</div>
 							<h4>File errors</h4>
-							<div class="error-list errors-file">
+							<div class="error-list <?php echo($output->files ? '' : 'list-plain'); ?> errors-file">
 								<?php
 									if ($output->files):
 										foreach ($output->files as $file => $data):
@@ -203,6 +207,10 @@
 									</article>
 								<?php
 										endforeach;
+									else:
+								?>
+									<article><span class="text-muted">No errors to show, congrats!</span> &#x1f642;</article>
+								<?php
 									endif;
 								?>
 							</div>
